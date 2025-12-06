@@ -33,15 +33,21 @@ public class Projectile {
         }
     }
 
-    public void draw(GraphicsContext gc) {
-        if (isEnemy) {
-            gc.setFill(Color.RED);  
-            gc.fillOval(x, y, 8, 8); 
-        } else {
-            gc.setFill(Color.YELLOW); 
-            gc.fillRect(x, y, 5, 15);
-        }
+public void draw(GraphicsContext gc) {
+    if (isEnemy) {
+        // Enemy Laser: Red with White Core
+        gc.setFill(Color.RED);
+        gc.fillOval(x - 2, y - 2, 12, 12); // Outer Glow
+        gc.setFill(Color.WHITE);
+        gc.fillOval(x, y, 8, 8); // Core
+    } else {
+        // Player Laser: Blue/Cyan Bolt
+        gc.setFill(Color.CYAN);
+        gc.fillRect(x, y, 6, 15); // Outer
+        gc.setFill(Color.WHITE);
+        gc.fillRect(x + 2, y + 2, 2, 11); // Core
     }
+}
 
     public boolean isEnemyShot() { return isEnemy; }
     public boolean isActive() { return active; }

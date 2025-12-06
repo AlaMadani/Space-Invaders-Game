@@ -1,20 +1,22 @@
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\PlayingState.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\Projectile.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\ScoreManager.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\RedAlien.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\MenuState.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\Bunker.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\GameEngine.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\AlienSquad.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\Ship.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\GameState.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\Alien.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\ShipDecorator.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\ShieldDecorator.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\GreenAlien.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\Launcher.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\SpaceInvadersPatterns.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\AlienFactory.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\GameOverState.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\GameObserver.java
-C:\Users\YOUSSEF\Documents\NetBeansProjects\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\SpaceShip.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\state\MenuState.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\decorator\ShipDecorator.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\state\Bunker.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\composite\AlienSquad.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\StarField.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\observer\GameObserver.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\decorator\ShieldDecorator.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\state\PlayingState.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\Launcher.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\observer\ScoreManager.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\decorator\SpaceShip.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\state\GameState.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\Projectile.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\composite\GreenAlien.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\factory\AlienFactory.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\SpaceInvadersPatterns.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\composite\Alien.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\singleton\GameEngine.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\state\GameOverState.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\composite\RedAlien.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\decorator\Ship.java
+C:\Users\PC\Desktop\My Projects\Space_Invaders_Game\SpaceInvadersPatterns\src\main\java\com\mygame\spaceinvaderspatterns\patterns\state\PausedState.java

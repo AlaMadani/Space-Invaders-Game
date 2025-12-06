@@ -4,6 +4,8 @@
 
 package com.mygame.spaceinvaderspatterns;
 
+import com.mygame.spaceinvaderspatterns.patterns.state.MenuState;
+import com.mygame.spaceinvaderspatterns.patterns.singleton.GameEngine;
 import javafx.application.Application;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
@@ -34,6 +36,7 @@ public class SpaceInvadersPatterns extends Application {
         engine.setState(new MenuState()); 
 
         scene.setOnKeyPressed(event -> engine.handleInput(event));
+        scene.setOnKeyReleased(event -> engine.handleInput(event));
 
         new AnimationTimer() {
             @Override
