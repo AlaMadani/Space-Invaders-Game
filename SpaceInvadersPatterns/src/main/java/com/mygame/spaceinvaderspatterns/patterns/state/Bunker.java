@@ -5,6 +5,7 @@
 package com.mygame.spaceinvaderspatterns.patterns.state;
 
 import com.mygame.spaceinvaderspatterns.Projectile;
+import com.mygame.spaceinvaderspatterns.patterns.decorator.Ship;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 /**
@@ -47,6 +48,15 @@ public class Bunker {
         return false;
     }
     
+    public boolean checkShipCollision(Ship s) {
+        if (health <= 0) return false;
+
+        // Rectangle Intersection Logic
+        return s.getX() < x + width && 
+               s.getX() + s.getWidth() > x &&
+               s.getY() < y + height && 
+               s.getY() + s.getHeight() > y;
+    }
     public boolean isDestroyed() {
         return health <= 0;
     }

@@ -14,7 +14,11 @@ public interface Ship {
     void draw(GraphicsContext gc);
     void moveLeft();
     void moveRight();
+    void moveUp();   // <--- NEW
+    void moveDown();
     double getX();
     double getY();
+    double getWidth();  // <--- NEW
+    double getHeight();
     Projectile shoot();
 }

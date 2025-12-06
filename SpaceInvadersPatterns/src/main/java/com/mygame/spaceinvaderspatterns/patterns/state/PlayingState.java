@@ -208,12 +208,49 @@ public class PlayingState implements GameState, GameObserver {
             if (!p.isActive()) it.remove();
         }
         fleet.removeDead();
+        
+        for (Bunker b : bunkers) {
+            if (b.checkShipCollision(player)) {
+                logger.info("CRASH! Player hit a bunker.");
+                GameEngine.getInstance().setState(new GameOverState());
+                return;
+            }
+        }
+
+        // --- 2. CRASH LOGIC: Player vs Aliens ---
+        // We need a helper method to check the whole fleet tree
+        if (checkAlienCrash(fleet)) {
+            logger.info("CRASH! Player hit an alien.");
+            GameEngine.getInstance().setState(new GameOverState());
+            return;
+        }
+        
+    }
+    private boolean checkAlienCrash(Alien alien) {
+        // Recursive check for Composite Pattern
+        if (alien instanceof AlienSquad) {
+            for (Alien member : ((AlienSquad) alien).getMembers()) {
+                if (checkAlienCrash(member)) return true;
+            }
+        } else {
+            // It's a Leaf (Actual Alien) -> Check Intersection
+            if (alien.isAlive()) {
+                if (player.getX() < alien.getX() + alien.getWidth() &&
+                    player.getX() + player.getWidth() > alien.getX() &&
+                    player.getY() < alien.getY() + alien.getHeight() &&
+                    player.getY() + player.getHeight() > alien.getY()) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
     
     private void processInput() {
         if (activeKeys.contains(KeyCode.LEFT)) player.moveLeft();
         if (activeKeys.contains(KeyCode.RIGHT)) player.moveRight();
-        
+        if (activeKeys.contains(KeyCode.UP)) player.moveUp();
+        if (activeKeys.contains(KeyCode.DOWN)) player.moveDown();
         if (activeKeys.contains(KeyCode.SPACE)) {
             long now = System.nanoTime();
             if (now - lastShotTime > SHOOT_COOLDOWN) {

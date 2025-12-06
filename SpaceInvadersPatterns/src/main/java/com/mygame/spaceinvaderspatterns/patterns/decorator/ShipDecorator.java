@@ -47,4 +47,14 @@ public abstract class ShipDecorator implements Ship {
 
     @Override
     public double getY() { return decoratedShip.getY(); }
+    
+    @Override
+    public void moveUp() { decoratedShip.moveUp(); }
+    @Override
+    public void moveDown() { decoratedShip.moveDown(); }
+
+    @Override
+    public double getWidth() { return decoratedShip.getWidth(); }
+    @Override
+    public double getHeight() { return decoratedShip.getHeight(); }
 }

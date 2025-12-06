@@ -41,11 +41,23 @@ public void draw(GraphicsContext gc) {
         gc.setFill(Color.WHITE);
         gc.fillOval(x, y, 8, 8); // Core
     } else {
-        // Player Laser: Blue/Cyan Bolt
-        gc.setFill(Color.CYAN);
-        gc.fillRect(x, y, 6, 15); // Outer
-        gc.setFill(Color.WHITE);
-        gc.fillRect(x + 2, y + 2, 2, 11); // Core
+       gc.setFill(Color.CYAN);
+            
+            // Draw a sharp triangle pointing UP
+            // x is the top-left corner of the "box", so we adjust points relative to it
+            double w = 6;  // Width of bullet
+            double h = 15; // Height of bullet
+            
+            gc.fillPolygon(
+                new double[]{x, x + w, x + (w / 2)}, // Bottom-Left, Bottom-Right, Top-Tip
+                new double[]{y + h, y + h, y},       // Bottom, Bottom, Top
+                3
+            );
+            
+            // Optional: Draw a white "core" line inside to make it glow
+            gc.setStroke(Color.WHITE);
+            gc.setLineWidth(1);
+            gc.strokeLine(x + (w / 2), y + h - 2, x + (w / 2), y + 2);
     }
 }
 
